@@ -2,6 +2,8 @@
 #include <random>
 #include <vector>
 
+// Find problems!
+
 // BinSearch searched for x in [left, right)
 int BinSearch(const std::vector<int>& arr, int x, int left, int right) {
     if (right - left == 1) {
@@ -51,8 +53,8 @@ void PrintInput(const std::vector<int>& arr, int x, int n) {
 
 bool StressTest() {
     const int kItersCount = 1000;
-    const int kMaxLength = 1000000;
-    const int kMaxDelta = 1000;
+    const int kMaxLength = 10;
+    const int kMaxDelta = 100;
 
     std::mt19937_64 gen(std::random_device{}());
     // std::mt19937_64 gen(189);
