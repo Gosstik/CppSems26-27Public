@@ -31,14 +31,16 @@ int main() {
     int a[5];
     int* pa = a;          // OK
     int** ppa1 = &a;      // CE
-    int** ppa2 = &pa;     // OK
-    int (*ppa3)[5] = &a;  // OK
+    int** ppa2 = ppd2;    // CE
+    int** ppa3 = &pa;     // OK
+    int (*ppa4)[5] = &a;  // OK
 
     ////////////////////////////////////////////////////////////////////////////
 
     // 1-dim pointer array
 
-    int* t[5];         // array of 5 pointers to int
-    int (*t2)[5] = t;  // CE, pointer to array of 5 ints
-    int** pt = t;      // OK
+    int* t[5];           // array of 5 pointers to int
+    int (*t2)[5] = t;    // CE, pointer to array of 5 ints
+    int** pt = t;        // OK
+    int*(*ppp)[5] = &t;  // OK
 }

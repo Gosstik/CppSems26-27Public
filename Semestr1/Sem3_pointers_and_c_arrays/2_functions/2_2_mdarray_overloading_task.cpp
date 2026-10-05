@@ -15,8 +15,11 @@ void Foo(int** a) { std::cout << 1 << '\n'; }
 // 3 (different, but also point to the first element)
 void Foo(int (*a)[5]) { std::cout << 3 << '\n'; }
 
-// 4
-// void Foo(int*(*a)) { std::cout << 4 << '\n'; }
+// ??? 4
+// void Foo(int a[5][5]) { std::cout << 4 << '\n'; }
+
+// ??? 5
+// void Foo(int*(*a)) { std::cout << 5 << '\n'; }
 
 int main() {
     int a[5];

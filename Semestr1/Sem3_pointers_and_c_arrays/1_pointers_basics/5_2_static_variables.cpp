@@ -2,18 +2,17 @@
 
 void Foo() {
     int a = 1;
-    static int b = 1;
+    static int foo_calls_count = 0;
 
     ++a;
-    ++b;
+    ++foo_calls_count;
 
-    std::cout << a << ' ' << b << '\n';
+    std::cout << "Foo called " << foo_calls_count << " times, a=" << a << "\n";
 }
 
 int main() {
     Foo();
     Foo();
-    Foo();
 
-    // std::cout << Foo::b; // CE
+    // std::cout << Foo::foo_calls_count; // CE
 }

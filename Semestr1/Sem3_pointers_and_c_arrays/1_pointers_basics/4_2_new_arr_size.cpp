@@ -14,6 +14,6 @@ int main() {
         int* p1 = new int[100];
         int* p2 = new int[1000];
         int* p3 = new int[4000];
-        std::cout << p1[-2] << ' ' << p2[-2] << ' ' << p3[-2] << '\n';
+        std::cout << p1[-2] << ' ' << p2[-2] << ' ' << p3[-2] << '\n';  // UB
     }
 }
