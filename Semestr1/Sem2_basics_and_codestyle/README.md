@@ -183,6 +183,8 @@ Regrettably, currently vscode does not have widely used extension for full `.cla
 Handy links:
 
 - Больше про clangd и его возможности: [clangd.llvm.org/features](https://clangd.llvm.org/features)
+- [Diagnostic flags in Clang](https://clang.llvm.org/docs/DiagnosticsReference.html)
+
 
 ## Algo compilation
 

@@ -1,5 +1,6 @@
 # File format:
 # https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+# Google codestyle: https://google.github.io/styleguide/cppguide.html
 ---
 BasedOnStyle: Google
 DerivePointerAlignment: false

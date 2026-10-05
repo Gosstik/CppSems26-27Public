@@ -7,9 +7,8 @@ int main() {
     std::cout << a.size() << '\n';
     std::cout << a.empty();
     std::cout << a[1];
-    a.push_back(1);
+    a.push_back(1); // CE
     for (int e: a) {
         std::cout << e << ' ';
     }
-
 }

@@ -2,22 +2,17 @@
 #include <string>
 #include <vector>
 
+// !!! std::string is not a container
 // std::basic_string
 
 const int cSize = 10;
 
-class MyClass {
+class MyClass {};
 
-};
-
-std::string Foo(std::string& s,
-                size_t l,
-                size_t len = std::string::npos
-) {
+std::string Foo(std::string& s, size_t l, size_t len = std::string::npos) {
     std::string res;
 
     int var_1;
-
 
     if (len == std::string::npos) {
         return s.substr(l, std::string::npos);
